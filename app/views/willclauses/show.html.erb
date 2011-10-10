@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Will:</b>
+  <%= @willclause.will_id %>
+</p>
+
+<p>
+  <b>Friend:</b>
+  <%= @willclause.friend_id %>
+</p>
+
+<p>
+  <b>Stuff:</b>
+  <%= @willclause.stuff_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_willclause_path(@willclause) %> |
+<%= link_to 'Back', willclauses_path %>

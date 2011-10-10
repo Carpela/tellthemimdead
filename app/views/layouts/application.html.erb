@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+  <title>Tellthemimdead</title>
+  <%= stylesheet_link_tag    "application" %>
+  <link rel='stylesheet' type='text/css' href="/stylesheets/style.css" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="container">
+
+	<div class="left" id="main_left">
+
+		<div id="header">Tell Them I'm Dead</div>
+			
+		<div class="right" id="main">
+
+			<div class="padded">
+				
+				<p class="notice"><%= notice %></p>
+				<p class="alert"><%= alert %></p>
+								
+				<%= yield %>
+				<div class="clearer">&nbsp;</div>
+
+				<div class="content_separator"></div>
+
+
+				<div class="content_separator"></div>
+
+				<div class="content_separator"></div>
+<div class="content_separator"></div>
+			
+			</div>
+
+		</div>
+
+		<div class="left" id="subnav">
+
+		</div>
+	
+		<div class="clearer">&nbsp;</div>
+
+	</div>
+
+	<div class="right" id="main_right">
+
+		<div class="padded">
+		</div>
+
+	</div>
+
+	<div class="clearer">&nbsp;</div>
+
+	<div id="footer">
+		
+		<span class="left">&copy; 2009 <a href="index.html">Website.com</a>. Valid <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> &amp; <a href="http://validator.w3.org/check?uri=referer">XHTML</a></span>
+		
+		<span class="right"><a href="http://templates.arcsin.se/">Website template</a> by <a href="http://arcsin.se/">Arcsin</a></span>
+		
+		<div class="clearer">&nbsp;</div>
+
+	</div>
+
+</div>
+
+</body>
+
+
+
+</body>
+</html>

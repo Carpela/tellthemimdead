@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  will_id: 1
+  friend_id: 1
+  stuff_id: 1
+
+two:
+  will_id: 1
+  friend_id: 1
+  stuff_id: 1

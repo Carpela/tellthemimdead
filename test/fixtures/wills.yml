@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  datesigned: 2011-10-05 17:44:13
+
+two:
+  user_id: 1
+  datesigned: 2011-10-05 17:44:13

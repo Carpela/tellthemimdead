@@ -1,0 +1,27 @@
+<h1>Listing willclauses</h1>
+
+<table>
+  <tr>
+    <th>Will</th>
+    <th>Friend</th>
+    <th>Stuff</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @willclauses.each do |willclause| %>
+  <tr>
+    <td><%= willclause.will_id %></td>
+    <td><%= willclause.friend_id %></td>
+    <td><%= willclause.stuff_id %></td>
+    <td><%= link_to 'Show', willclause %></td>
+    <td><%= link_to 'Edit', edit_willclause_path(willclause) %></td>
+    <td><%= link_to 'Destroy', willclause, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Willclause', new_willclause_path %>

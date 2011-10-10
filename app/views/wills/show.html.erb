@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @will.user_id %>
+</p>
+
+<p>
+  <b>Datesigned:</b>
+  <%= @will.datesigned %>
+</p>
+
+
+<%= link_to 'Edit', edit_will_path(@will) %> |
+<%= link_to 'Back', wills_path %>
