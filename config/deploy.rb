@@ -50,21 +50,10 @@ namespace :bundler do
   end
 end
 
-$:.unshift(File.expand_path('./lib')) # Add RVM's lib directory to the load path.
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
 require "rvm/capistrano"                  # Load RVM's capistrano plugin.
 set :rvm_ruby_string, '1.8.7'        # Or whatever env you want it to run in.
 set :rvm_type, :user
-
-# Delayed Job
-set :rails_env, 'production'
-require "delayed/recipes"  
-
-before "deploy:restart", "delayed_job:stop"
-after  "deploy:restart", "delayed_job:start"
-
-after "deploy:stop",  "delayed_job:stop"
-after "deploy:start", "delayed_job:start"
-
 
 
 before "deploy:start", "deploy:migrate"
